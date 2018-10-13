@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sistema de Coevaluaciones</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #fff8e7;
+      height: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      padding-top: 10px;
+      /*height: 100%;*/
+    }
+
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;}
+    }
+    table, th, td {
+    border: 9px solid transparent;
+    border-collapse: collapse;
+	}
+
+    button {
+    margin: 4px;
+    padding: 5px;
+	}
+    .navbar-nav{
+      padding: 20px;
+      padding-left: 20%;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-2 sidenav hidden-s">
+      <h3>Sistema de Coevaluaciones</h3>
+      <hr>
+      <h5> Nombre Apellido Apellido</h5>
+      <hr>
+      <ul class="nav nav-pills nav-stacked">
+      	<li>Cursos Cursados</li>
+        <table>
+        <tr>
+    			<td><i class="em em-woman-kiss-woman"></i></td>
+    			<td><li><a href="#">Arquitectura de Computadores<br/><small>CC4301-1</small></a></li></td>
+  			</tr>
+        <tr>
+    			<td><i class="em em-woman-kiss-woman"></i></td>
+    			<td><li><a href="#">Ingeniería de Software I<br/><small>CC4401-1</small></a></li></td>
+  			</tr>
+        <tr>
+    			<td><i class="em em-brain"></i></td>
+    			<td><li><a href="#">Bases de Datos<br/><small>CC3201-1</small></a></li></td>
+  			</tr>
+
+
+  		  </table>
+
+      </ul><br>
+    </div>
+    <br>
+
+
+  	<br>
+    <br>
+
+    	<ul class="nav navbar-nav">
+            <button type="button" class="btn btn-warning"><i class="em em-bust_in_silhouette"></i> Mi Perfil</button>
+            <button type="button" class="btn btn-warning"><i class="em em-mag_right"></i> Buscar</button>
+            <button type="button" class="btn btn-warning">➕ Coevaluación</button>
+            <button type="button" class="btn btn-warning">➕ Curso</button>
+    	</ul>
+    </div>
+</div>
+
+</body>
+</html>
