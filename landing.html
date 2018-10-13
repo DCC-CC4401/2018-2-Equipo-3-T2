@@ -42,6 +42,12 @@
       padding: 20px;
       padding-left: 20%;
     }
+
+    .container{
+      padding-top:8%;
+      padding-left: 15%;
+    }
+
   </style>
 </head>
 <body>
@@ -55,7 +61,7 @@
       <h5> Nombre Apellido Apellido</h5>
       <hr>
       <ul class="nav nav-pills nav-stacked">
-      	<li>Cursos Cursados</li>
+      	<li><b>Cursos Cursados</b></li>
         <table>
         <tr>
     			<td><i class="em em-woman-kiss-woman"></i></td>
@@ -87,6 +93,41 @@
             <button type="button" class="btn btn-warning">➕ Coevaluación</button>
             <button type="button" class="btn btn-warning">➕ Curso</button>
     	</ul>
+
+
+      <div class="container">
+
+      <h3>Últimas Coevaluaciones</h3>
+      <hr style="height:1px;border:none;background-color:#330;" />
+      <table class="table">
+        <tbody>
+          <tr class="warning">
+            <td>Coevaluación 3<br><font size="2" color="gray">Arquitectura De Computadores<br>CC4301-1</font></td>
+            <td><font size="2" color="gray">Fecha Término</font><br>09/11/2018</td>
+            <td><br>Pendiente</td>
+            <td><button type="button" class="btn btn-link">Ver</button></td>
+          </tr>
+          <tr class="active">
+            <td>Coevaluación 2<br><font size="2" color="gray">Ingeniería de Software I<br>CC4401-1</font></td>
+            <td><font size="2" color="gray">Fecha Término</font><br>02/11/2018</td>
+            <td><br>Contestada</td>
+            <td><button type="button" class="btn btn-link">Ver</button></td>
+          </tr>
+          <tr class="warning">
+            <td>Coevaluación 1<br><font size="2" color="gray">Ingeniería de Software I<br>CC4401-1</font></td>
+            <td><font size="2" color="gray">Fecha Término</font><br>23/10/2018</td>
+            <td><br>Contestada<br><small>(Cerrada)</small></td>
+            <td><button type="button" class="btn btn-link">Ver</button></td>
+          </tr>
+          <tr class="active">
+            <td>Coevaluación 2<br><font size="2" color="gray">Arquitectura De Computadores<br>CC4301-1</font></td>
+            <td><font size="2" color="gray">Fecha Término</font><br>15/10/2018</td>
+            <td><br>Publicada</td>
+            <td><button type="button" class="btn btn-link">Ver</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     </div>
 </div>
 
