@@ -15,72 +15,51 @@
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <style>
     .sidebar {
-      background-color: #fff8e7;
+      background-color: #efeeea;
       height: 100%;
       position: fixed;
       z-index: 1;
       overflow-x: hidden;
-      padding-top: 10px;
+      padding-top: 1.9%;
+    }
+
+    .sidebar-sticky {
+      padding-top: 20px;
+    }
+
+    .navbar {
+      background-color: #fff8e7;
+      padding-top: 3%;
+      padding-bottom: 3%;
     }
 
     table, th, td {
       border: 9px solid transparent;
       border-collapse: collapse;
     }
+
+    .courses {
+      padding-left: 18px;
+    }
+
+    .cuerpo {
+      padding: 2%;
+      padding-right: 5%;
+    }
   </style>
   <title>Coevaluaciones - Perfil</title>
 </head>
 <body>
-  <!-- Barra superior -->
-  <nav class="navbar sticky-top bg-light flex-md-nowrap navbar-expand-sm">
-    <!-- Título -->
-    <a class="navbar-brand col-xs-4 col-sm-3 col-md-2" href="#">Coevaluaciones</a>
-    <!-- Barra de herramientas -->
-    <div class="collapse navbar-collapse col-sm-9 col-md-10" id="barra-herramientas">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="btn btn-warning" role="button" href="#" style="margin-right:3px">
-            <div class="row">
-              <div class="col-sm-1 align-self-center small">
-                <i class="em em-bust_in_silhouette"></i>
-              </div>
-              <div class="col text-truncate">Mi Perfil</div>
-            </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-warning" role="button" href="#" style="margin-right:3px">
-            <div class="row">
-              <div class="col-sm-1 align-self-center small">
-                <i class="em em-mag_right"></i>
-              </div>
-              <div class="col text-truncate">Buscar</div>
-            </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-warning" role="button" href="#" style="margin-right:3px">
-            <div class="row">
-              <div class="col-sm-1 align-self-center small">➕</div>
-              <div class="col text-truncate">Coevaluación</div>
-            </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-warning" role="button" href="#" style="margin-right:3px">
-            <div class="row">
-              <div class="col-sm-1 align-self-center small">➕</div>
-              <div class="col text-truncate">Curso</div>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+
   <div id="body" class="container-fluid">
+
     <div class="row">
       <!-- Barra lateral -->
-      <nav id="sidebar" class="col-md-2 col-sm-3 bg-light sidebar">
+      <nav id="sidebar" class="col-md-2 col-sm-3 sidebar">
+        <!-- Título -->
+        <br>
+        <a class="navbar-brand col-xs-4 col-sm-3 col-md-2" href="#">Coevaluaciones</a>
+
         <div class="sidebar-sticky">
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center
               px-3 mt-4 mb-1">
@@ -90,7 +69,7 @@
               px-3 mt-4 mb-1 text-muted">
             <span>Cursos cursados</span>
           </h6>
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mr-auto courses">
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <div class="row">
@@ -133,52 +112,110 @@
           </ul>
         </div>
       </nav>
+
       <!-- Contenido -->
       <main role="main" class="col-md-10 col-sm-9 ml-sm-auto col-lg-10 pt-3 px-4">
-        <div id="header-perfil"
-             class="d-flex justify-content-between flex-wrap flex-md-nowrap
-               align-items-center pb-2 mb-3 border-bottom">
-          <h1 class="h2">Perfil</h1>
-          <button class="btn btn-sm btn-outline-secondary">Cambiar contraseña</button>
-        </div>
-        <div id="info-usuario" class="container-fluid">
-          <h4>
-            Robert E. O. Speedwagon <br>
-            <small>
-              12.345.678-9 <br />
-              reospeedwagon@gmail.com
-            </small>
-          </h4>
-        </div>
 
-        <div id="cursos-asociados" class="container-fluid">
-          <h3>Cursos asociados</h3>
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
-               align-items-center pb-2 mb-3 border-bottom">
-            <h6>
-              CC4301-1 Arquitectura de Computadores <br />
-              <small class="mb-2 text-muted">2018 Primavera</small>
-            </h6>
-            <a href="#" class="btn btn-primary">Resumen</a>
+        <!-- Barra superior -->
+        <nav class="navbar sticky-top flex-md-nowrap navbar-expand-sm" 
+             style="background-color: #ffffff;">
+
+          <!-- Barra de herramientas -->
+          <div class="collapse navbar-collapse col-sm-9 col-md-10" 
+               id="barra-herramientas">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="btn btn-warning" role="button" href="#" 
+                   style="margin-left: -10px;margin-right:10px">
+                  <div class="row">
+                    <div class="col-sm-1 align-self-center small">
+                      <i class="em em-bust_in_silhouette"></i>
+                    </div>
+                    <div class="col text-truncate">Mi Perfil</div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-warning" role="button" href="#" 
+                   style="margin-right:10px;">
+                  <div class="row">
+                    <div class="col-sm-1 align-self-center small">
+                      <i class="em em-mag_right"></i>
+                    </div>
+                    <div class="col text-truncate">Buscar</div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-warning" role="button" href="#" 
+                   style="margin-right:10px">
+                  <div class="row">
+                    <div class="col-sm-1 align-self-center small">➕</div>
+                    <div class="col text-truncate">Coevaluación</div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-warning" role="button" href="#" 
+                   style="margin-right:10px">
+                  <div class="row">
+                    <div class="col-sm-1 align-self-center small">➕</div>
+                    <div class="col text-truncate">Curso</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="cuerpo">
+          <!--Aqui se inserta el cuerpo de la pagina-->
+          <div id="header-perfil"
+               class="d-flex justify-content-between flex-wrap flex-md-nowrap
+               border-bottom border-dark pb-2">
+            <h3>Perfil</h3>
+            <button class="btn btn-sm btn-outline-danger">Cambiar contraseña</button>
+          </div>
+          <div id="info-usuario" class="d-flex py-4">
+            <h5>
+              Robert E. O. Speedwagon <br>
+              <small>
+                12.345.678-9 <br />
+                reospeedwagon@gmail.com
+              </small>
+            </h5>
           </div>
 
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
-               align-items-center pb-2 mb-3 border-bottom">
-            <h6>
-              CC4401-1 Ingeniería de Software <br />
-              <small class="mb-2 text-muted">2018 Primavera</small>
-            </h6>
-            <a href="#" class="btn btn-primary">Resumen</a>
-          </div>
+          <div id="cursos-asociados">
+            <h4 class="mb-3">Cursos asociados</h4>
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
+                 align-items-center px-3 py-2 bg-light">
+              <h6>
+                CC4301-1 Arquitectura de Computadores <br />
+                <small class="mb-2 text-muted">2018 Primavera</small>
+              </h6>
+              <a href="#" class="btn btn-info">Resumen</a>
+            </div>
 
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
-               align-items-center pb-2 mb-3 border-bottom">
-            <h6>
-              CC3201-1 Bases de Datos <br />
-              <small class="mb-2 text-muted">2018 Otoño</small>
-            </h6>
-            <a href="#" class="btn btn-primary">Resumen</a>
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
+                 align-items-center px-3 py-2 bg-white">
+              <h6>
+                CC4401-1 Ingeniería de Software <br />
+                <small class="mb-2 text-muted">2018 Primavera</small>
+              </h6>
+              <a href="#" class="btn btn-info">Resumen</a>
+            </div>
+
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
+                 align-items-center px-3 py-2 bg-light">
+              <h6>
+                CC3201-1 Bases de Datos <br />
+                <small class="mb-2 text-muted">2018 Otoño</small>
+              </h6>
+              <a href="#" class="btn btn-info">Resumen</a>
+            </div>
           </div>
+          <!--Aqui termina el cuerpo de la pagina-->
         </div>
       </main>
     </div>
