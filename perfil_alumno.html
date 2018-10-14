@@ -1,78 +1,188 @@
 ﻿<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" 
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
-          crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+  <!-- Emojis -->
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <!-- Sería mejor mover esto a un css aparte [Ignacio] -->
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+      height: 550px
+    }
 
-    <title>Uwu</title>
-  </head>
-  <body>
-    <!-- Barra superior -->
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-      <!-- Título -->
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
-        Sistema de coevaluaciones
-      </a>
-      <!-- Barra de herramientas -->
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Soy un botón waew</a>
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #fff8e7;
+      height: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      padding-top: 10px;
+      /*height: 100%;*/
+    }
+
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {
+        height: auto;
+      }
+    }
+
+    table, th, td {
+      border: 9px solid transparent;
+      border-collapse: collapse;
+    }
+
+    button {
+      margin: 4px;
+      padding: 5px;
+    }
+
+    .container {
+      padding-top: 8%;
+      padding-left: 15%;
+    }
+  </style>
+  <title>Coevaluaciones - Perfil</title>
+</head>
+<body>
+  <!-- Barra superior -->
+  <nav class="navbar sticky-top bg-dark flex-md-nowrap navbar-expand-sm">
+    <!-- Título -->
+    <a class="navbar-brand col-sm-3 col-md-2" href="#">Coevaluaciones</a>
+    <!-- Barra de herramientas -->
+    <div class="collapse navbar-collapse col-sm-9 col-md-10" id="barra-herramientas">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <div class="row">
+              <div class="col-sm-2 align-self-center"><i class="em em-bust_in_silhouette"></i></div>
+              <div class="col">Mi Perfil</div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <div class="row">
+              <div class="col-sm-2 align-self-center"><i class="em em-mag_right"></i></div>
+              <div class="col">Buscar</div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <div class="row">
+              <div class="col-sm-2 align-self-center">➕</div>
+              <div class="col">Coevaluación</div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <div class="row">
+              <div class="col-sm-2 align-self-center">➕</div>
+              <div class="col">Curso</div>
+            </div>
+          </a>
         </li>
       </ul>
-    </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <!-- Barra lateral -->
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          Barra lateral super bacán
-        </nav>
-        <!-- Contenido -->
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    </div>
+  </nav>
+  <div id="body" class="container-fluid">
+    <div class="row">
+      <!-- Barra lateral -->
+      <nav id="sidebar" class="col-md-2 col-sm-3 bg-light sidebar">
+        <div class="sidebar-sticky">
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center
+              px-3 mt-4 mb-1">
+            <span id="nombre-usuario">Robert E. O. Speedwagon</span>
+          </h6>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center
+              px-3 mt-4 mb-1 text-muted">
+            <span>Cursos cursados</span>
+          </h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="row">
+                  <div class="col-sm-1 align-self-center">
+                    <i class="em em-woman-kiss-woman"></i>
+                  </div>
+                  <div class="col navbar-text small">
+                    Arquitectura de Computadores <br />
+                    <span class="small text-muted">CC4301-1</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="row">
+                  <div class="col-sm-1 align-self-center">
+                    <i class="em em-woman-kiss-woman"></i>
+                  </div>
+                  <div class="col navbar-text small">
+                    Ingeniería de Software I<br />
+                    <span class="small text-muted">CC4401-1</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Contenido -->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+        <div id="header-perfil"
+             class="d-flex justify-content-between flex-wrap flex-md-nowrap
+               align-items-center pb-2 mb-3 border-bottom">
+          <h1 class="h2">Perfil</h1>
+          <button class="btn btn-sm btn-outline-secondary">Cambiar contraseña</button>
+        </div>
+        <div id="info-usuario" class="container-fluid">
+          <h4>
+            Robert E. O. Speedwagon <br>
+            <small>
+              12.345.678-9 <br />
+              reospeedwagon@gmail.com
+            </small>
+          </h4>
+        </div>
+
+        <div id="cursos-asociados" class="container-fluid">
+          <h3>Cursos asociados</h3>
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
                align-items-center pb-2 mb-3 border-bottom">
-            <h1 class="h2">Perfil</h1>
-            <button class="btn btn-sm btn-outline-secondary">Cambiar contraseña</button>
-          </div>
-          <div class="container-fluid">
-            <h4>
-              Robert E. O. Speedwagon <br>
-              <small>
-                12.345.678-9 <br />
-                reospeedwagon@gmail.com
-              </small>
-            </h4>
+            <h6>
+              CC4401-1 Ingeniería de Software <br />
+              <small class="mb-2 text-muted">2018 Primavera</small>
+            </h6>
+            <a href="#" class="btn btn-primary">Resumen</a>
           </div>
 
-          <div id="cursos-asociados" class="container-fluid">
-            <h3>Cursos asociados</h3>
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
                align-items-center pb-2 mb-3 border-bottom">
-              <h6>
-                CC4401-1 Ingeniería de Software <br />
-                <small class="mb-2 text-muted">2018 Primavera</small>
-              </h6>
-              <a href="#" class="btn btn-primary">Resumen</a>
-            </div>
-
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
-               align-items-center pb-2 mb-3 border-bottom">
-              <h6>
-                CC3201-1 Bases de Datos <br />
-                <small class="mb-2 text-muted">2018 Otoño</small>
-              </h6>
-              <a href="#" class="btn btn-primary">Resumen</a>
-            </div>
+            <h6>
+              CC3201-1 Bases de Datos <br />
+              <small class="mb-2 text-muted">2018 Otoño</small>
+            </h6>
+            <a href="#" class="btn btn-primary">Resumen</a>
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
-  </body>
+  </div>
+</body>
 </html>
