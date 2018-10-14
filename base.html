@@ -15,72 +15,52 @@
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <style>
     .sidebar {
-      background-color: #fff8e7;
+      background-color: #efeeea;
       height: 100%;
       position: fixed;
       z-index: 1;
       overflow-x: hidden;
-      padding-top: 10px;
+      padding-top: 1.9%;
+    }
+
+    .sidebar-sticky{
+      padding-top: 20px;
+    }
+
+    .navbar{
+      background-color: #fff8e7;
+      padding-top: 3%;
+      padding-bottom: 3%;
     }
 
     table, th, td {
       border: 9px solid transparent;
       border-collapse: collapse;
     }
+
+    .courses{
+      padding-left: 18px;
+    }
+
+    .cuerpo{
+      padding: 2%;
+      padding-right: 5%;
+    }
+
   </style>
   <title>Coevaluaciones - Perfil</title>
 </head>
 <body>
-  <!-- Barra superior -->
-  <nav class="navbar sticky-top bg-light flex-md-nowrap navbar-expand-sm">
-    <!-- Título -->
-    <a class="navbar-brand col-xs-4 col-sm-3 col-md-2" href="#">Coevaluaciones</a>
-    <!-- Barra de herramientas -->
-    <div class="collapse navbar-collapse col-sm-9 col-md-10" id="barra-herramientas">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="btn btn-warning" role="button" href="#" style="margin-right:3px">
-            <div class="row">
-              <div class="col-sm-1 align-self-center small">
-                <i class="em em-bust_in_silhouette"></i>
-              </div>
-              <div class="col text-truncate">Mi Perfil</div>
-            </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-warning" role="button" href="#" style="margin-right:3px">
-            <div class="row">
-              <div class="col-sm-1 align-self-center small">
-                <i class="em em-mag_right"></i>
-              </div>
-              <div class="col text-truncate">Buscar</div>
-            </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-warning" role="button" href="#" style="margin-right:3px">
-            <div class="row">
-              <div class="col-sm-1 align-self-center small">➕</div>
-              <div class="col text-truncate">Coevaluación</div>
-            </div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-warning" role="button" href="#" style="margin-right:3px">
-            <div class="row">
-              <div class="col-sm-1 align-self-center small">➕</div>
-              <div class="col text-truncate">Curso</div>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+
   <div id="body" class="container-fluid">
+
     <div class="row">
       <!-- Barra lateral -->
-      <nav id="sidebar" class="col-md-2 col-sm-3 bg-light sidebar">
+      <nav id="sidebar" class="col-md-2 col-sm-3 sidebar">
+        <!-- Título -->
+        <br>
+        <a class="navbar-brand col-xs-4 col-sm-3 col-md-2" href="#">Coevaluaciones</a>
+
         <div class="sidebar-sticky">
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center
               px-3 mt-4 mb-1">
@@ -90,7 +70,7 @@
               px-3 mt-4 mb-1 text-muted">
             <span>Cursos cursados</span>
           </h6>
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mr-auto courses">
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <div class="row">
@@ -133,9 +113,69 @@
           </ul>
         </div>
       </nav>
+
       <!-- Contenido -->
       <main role="main" class="col-md-10 col-sm-9 ml-sm-auto col-lg-10 pt-3 px-4">
-        <!-- Aquí debería ir el panel central de la página -->
+
+        <!-- Barra superior -->
+        <nav class="navbar sticky-top flex-md-nowrap navbar-expand-sm" style="background-color: #ffffff;">
+
+          <!-- Barra de herramientas -->
+          <div class="collapse navbar-collapse col-sm-9 col-md-10" id="barra-herramientas" >
+            <ul class="navbar-nav mr-auto" >
+              <li class="nav-item">
+                <a class="btn btn-warning" role="button" href="#" style="margin-left: -10px;margin-right:10px">
+                  <div class="row">
+                    <div class="col-sm-1 align-self-center small">
+                      <i class="em em-bust_in_silhouette"></i>
+                    </div>
+                    <div class="col text-truncate">Mi Perfil</div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-warning" role="button" href="#" style="margin-right:10px;">
+                  <div class="row">
+                    <div class="col-sm-1 align-self-center small">
+                      <i class="em em-mag_right"></i>
+                    </div>
+                    <div class="col text-truncate">Buscar</div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-warning" role="button" href="#" style="margin-right:10px">
+                  <div class="row">
+                    <div class="col-sm-1 align-self-center small">➕</div>
+                    <div class="col text-truncate">Coevaluación</div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-warning" role="button" href="#" style="margin-right:10px">
+                  <div class="row">
+                    <div class="col-sm-1 align-self-center small">➕</div>
+                    <div class="col text-truncate">Curso</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <ul class="cuerpo">
+          <!--Aqui se inserta el cuerpo de la pagina-->
+        <h3> Hola</h3>
+        <hr>
+        <h4> Hola</h4>
+        <hr>
+        <h2> Hola</h2>
+        <hr>
+        <h1> Hola</h1>
+        <hr>
+        <h5> Hola</h5>
+          <!--Aqui termina el cuerpo de la pagina-->
+        </ul>
       </main>
     </div>
   </div>
